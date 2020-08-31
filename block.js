@@ -5,11 +5,12 @@ class Block{
     friction : 1.0,
     density: 0.001
   }
+  this.Visiblity = 255;
   this.body = Bodies.rectangle(x, y, width, height, options);
   this.width = width; 
   this.height = height; 
   World.add(world, this.body); 
-  this.Visiblity = 255;
+  
 } 
   display(){ 
     if(this.body.speed < 2){
